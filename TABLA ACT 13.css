@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+p{
+    color: orange;
+}
+
+
+.menu-horizontal{
+    background-color: orange;
+}
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Open Sans';
+
+}
+
+body{
+
+    background-image: url(../../../img/fondo.jpg);
+
+    background-size: cover;
+
+}
+
+nav{
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background-color: gray;
+
+    font-size: 20px;
+
+    margin-top: 50px;
+
+}
+
+.menu-horizontal{
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.menu-horizontal > li > a{
+
+    display: block;
+
+    padding: 15px 20px;
+
+    color: red;
+
+    text-decoration: none;
+
+}
+
+.menu-horizontal > li:hover{
+
+    background-color: orange;
+
+}
+
+.menu-vertical{
+
+    position: absolute;
+
+    display: none;
+
+    list-style: none;
+
+    width: 200px;
+
+    background-color: rgba(0, 0, 1, .5);
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+
+    display: block;
+
+}
+
+.menu-vertical li:hover{
+
+    background-color: steelblue;
+
+}
+
+
+
+
+.menu-vertical li a{
+
+    display: block;
+
+    color: darkblue;
+
+    text-decoration: none;
+
+    padding: 15px 15px 15px 20px;
+
+}
+
+
+
+
+#html{
+
+    margin: auto;
+
+    padding: 20px;
+
+    max-width: 900px;
+
+    background: #C0FF00;
+
+
+
+
+}
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
